@@ -701,6 +701,21 @@ footer{
 .footer-text .column h4{
     font-size: 22px;
 }
+
+.footer-text .column a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Source Sans Pro';
+    font-weight: 200;
+    font-size: 16px;
+    transition: 0.6s;
+}
+.footer-text .column a:hover{
+    transform: scale(1.02);
+    color: #FFC2C7;
+}
+
 .footer-text .column{
     width: 33%;
     color: #fff;
