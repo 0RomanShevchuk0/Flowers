@@ -19,9 +19,63 @@ window.addEventListener('scroll', function(){
 })
 
 
-let span = document.querySelectorAll('.catalog-nav-span');
-let count = 0;
-span[count].classList.add('active');
+// *Переключение навигации каталог
+
+let catalogSpan = document.querySelectorAll('#catalog-nav-span');
+let ccount = 0;
+catalogSpan[ccount].classList.add('active');
+
+document.querySelector('#catalog-nav-prev').addEventListener('click', () => {
+    catalogSpan[ccount].classList.remove('active');
+    if(ccount == 0){
+        ccount = 5;
+    }
+    ccount--;
+    catalogSpan[ccount].classList.add('active');
+})
+
+document.querySelector('#catalog-nav-next').addEventListener('click', () => {
+    if (ccount >= 4) {
+        catalogSpan[ccount].classList.remove('active');
+        ccount = 0;
+        catalogSpan[0].classList.add('active')
+        return
+    }
+    catalogSpan[ccount].classList.remove('active');
+    ccount++;
+    catalogSpan[ccount].classList.add('active');
+})
+
+
+// *Переключение навигации отзывы
+
+let vidgukiSpan = document.querySelectorAll('#vidguki-nav-span');
+let vcount = 0;
+vidgukiSpan[vcount].classList.add('active');
+
+document.querySelector('#vidguki-nav-prev').addEventListener('click', () => {
+    vidgukiSpan[vcount].classList.remove('active');
+    if(vcount == 0){
+        vcount = 5;
+    }
+    vcount--;
+    vidgukiSpan[vcount].classList.add('active');
+})
+
+document.querySelector('#vidguki-nav-next').addEventListener('click', () => {
+    if (vcount >= 4) {
+        vidgukiSpan[vcount].classList.remove('active');
+        vcount = 0;
+        vidgukiSpan[0].classList.add('active')
+        return
+    }
+    vidgukiSpan[vcount].classList.remove('active');
+    vcount++;
+    vidgukiSpan[vcount].classList.add('active');
+})
+
+
+// *Переключение слайдера каталог
 
 let pages = document.querySelectorAll('.catalog-page');
 let slider = document.querySelector('.catalog-slider');
@@ -29,30 +83,6 @@ let slider = document.querySelector('.catalog-slider');
 
 let otstup = 0;
 
-// Переключение навигации
-document.querySelector('.nav-button-prev').addEventListener('click', () => {
-    span[count].classList.remove('active');
-    if(count == 0){
-        count = 5;
-    }
-    count--;
-    span[count].classList.add('active');
-})
-
-document.querySelector('.nav-button-next').addEventListener('click', () => {
-    if (count >= 4) {
-        span[count].classList.remove('active');
-        count = 0;
-        span[0].classList.add('active')
-        return
-    }
-    span[count].classList.remove('active');
-    count++;
-    span[count].classList.add('active');
-})
-
-
-// Переключение слайдера
 document.querySelector('.nav-button-prev').addEventListener('click', () => {
     if(otstup >= 0) otstup = -500 ;
 
@@ -92,4 +122,19 @@ document.querySelectorAll('a.ancor').forEach(link => {
             behavior: 'smooth'
         })
     })
+})
+
+// *Подсчет символов отзыва
+
+let symbolCounter = document.querySelector('#symbol-counter')
+let vidgukiTextarea = document.querySelector('#vidguk-textarea');
+let textareaValue = 0;
+
+symbolCounter.textContent = `Symbols: ${textareaValue}`;
+
+vidgukiTextarea.addEventListener('keyup', (event) => {
+    console.log(event);
+
+    textareaValue = vidgukiTextarea.value;
+    symbolCounter.textContent = `Symbols: ${textareaValue.length}`;
 })
