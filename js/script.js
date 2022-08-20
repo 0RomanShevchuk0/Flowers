@@ -77,33 +77,59 @@ document.querySelector('#vidguki-nav-next').addEventListener('click', () => {
 
 // *Переключение слайдера каталог
 
-let pages = document.querySelectorAll('.catalog-page');
-let slider = document.querySelector('.catalog-slider');
+let cpages = document.querySelectorAll('.catalog-page');
 
 
-let otstup = 0;
+let cotstup = 0;
 
-document.querySelector('.nav-button-prev').addEventListener('click', () => {
-    if(otstup >= 0) otstup = -500 ;
+document.querySelector('#catalog-nav-prev').addEventListener('click', () => {
+    if(cotstup >= 0) cotstup = -500 ;
 
-    otstup += 100;
-    for (let i = 0; i < pages.length; i++) {
-        pages[i].style.transform = `translateX(${otstup}%)`;
+    cotstup += 100;
+    for (let i = 0; i < cpages.length; i++) {
+        cpages[i].style.transform = `translateX(${cotstup}%)`;
     } 
 })
 
-document.querySelector('.nav-button-next').addEventListener('click', () => {
-    otstup -= 100;
-    console.log(otstup);
+document.querySelector('#catalog-nav-next').addEventListener('click', () => {
+    cotstup -= 100;
 
-    if(otstup <= -500) {
-        otstup = 0 ;
+    if(cotstup <= -500) {
+        cotstup = 0 ;
 
     }
-    for (let i = 0; i < pages.length; i++) {
-        pages[i].style.transform = `translateX(${otstup}%)`;
+    for (let i = 0; i < cpages.length; i++) {
+        cpages[i].style.transform = `translateX(${cotstup}%)`;
     }
 })
+
+// *Переключение слайдера отзывы
+
+let vpages = document.querySelectorAll('.vidguki-page');
+
+let votstup = 0;
+
+document.querySelector('#vidguki-nav-prev').addEventListener('click', () => {
+    if(votstup >= 0) votstup = -500 ;
+
+    votstup += 100;
+    for (let i = 0; i < vpages.length; i++) {
+        vpages[i].style.transform = `translateX(${votstup}%)`;
+    } 
+})
+
+document.querySelector('#vidguki-nav-next').addEventListener('click', () => {
+    votstup -= 100;
+
+    if(votstup <= -500) {
+        votstup = 0 ;
+
+    }
+    for (let i = 0; i < vpages.length; i++) {
+        vpages[i].style.transform = `translateX(${votstup}%)`;
+    }
+})
+
 
 document.querySelectorAll('a.ancor').forEach(link => {
     link.addEventListener('click', function(e){
