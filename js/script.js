@@ -56,14 +56,15 @@ vidgukiSpan[vcount].classList.add('active');
 document.querySelector('#vidguki-nav-prev').addEventListener('click', () => {
     vidgukiSpan[vcount].classList.remove('active');
     if(vcount == 0){
-        vcount = 5;
+        vcount = vidgukiSpan.length;
     }
     vcount--;
     vidgukiSpan[vcount].classList.add('active');
 })
+console.log(vidgukiSpan.length);
 
 document.querySelector('#vidguki-nav-next').addEventListener('click', () => {
-    if (vcount >= 4) {
+    if (vcount >= vidgukiSpan.length - 1) {
         vidgukiSpan[vcount].classList.remove('active');
         vcount = 0;
         vidgukiSpan[0].classList.add('active')
@@ -83,7 +84,7 @@ let cpages = document.querySelectorAll('.catalog-page');
 let cotstup = 0;
 
 document.querySelector('#catalog-nav-prev').addEventListener('click', () => {
-    if(cotstup >= 0) cotstup = -500 ;
+    if(cotstup >= 0) cotstup = -cpages.length * 100 ;
 
     cotstup += 100;
     for (let i = 0; i < cpages.length; i++) {
@@ -94,7 +95,7 @@ document.querySelector('#catalog-nav-prev').addEventListener('click', () => {
 document.querySelector('#catalog-nav-next').addEventListener('click', () => {
     cotstup -= 100;
 
-    if(cotstup <= -500) {
+    if(cotstup <= -cpages.length * 100) {
         cotstup = 0 ;
 
     }
@@ -110,7 +111,7 @@ let vpages = document.querySelectorAll('.vidguki-page');
 let votstup = 0;
 
 document.querySelector('#vidguki-nav-prev').addEventListener('click', () => {
-    if(votstup >= 0) votstup = -500 ;
+    if(votstup >= 0) votstup = -vpages.length * 100 ;
 
     votstup += 100;
     for (let i = 0; i < vpages.length; i++) {
@@ -121,7 +122,7 @@ document.querySelector('#vidguki-nav-prev').addEventListener('click', () => {
 document.querySelector('#vidguki-nav-next').addEventListener('click', () => {
     votstup -= 100;
 
-    if(votstup <= -500) {
+    if(votstup <= -vpages.length * 100) {
         votstup = 0 ;
 
     }
