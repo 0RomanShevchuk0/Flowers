@@ -28,14 +28,14 @@ catalogSpan[ccount].classList.add('active');
 document.querySelector('#catalog-nav-prev').addEventListener('click', () => {
     catalogSpan[ccount].classList.remove('active');
     if(ccount == 0){
-        ccount = 5;
+        ccount = catalogSpan.length;
     }
     ccount--;
     catalogSpan[ccount].classList.add('active');
 })
 
 document.querySelector('#catalog-nav-next').addEventListener('click', () => {
-    if (ccount >= 4) {
+    if (ccount >= catalogSpan.length - 1) {
         catalogSpan[ccount].classList.remove('active');
         ccount = 0;
         catalogSpan[0].classList.add('active')
