@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flowers</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/adaptive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family
@@ -14,16 +15,19 @@
 </head>
 <body>
     <nav>
-        <div class="first-nav">
+        <div class="first-nav" id="first-nav">
             <div class="nav-logo-div">
                 <img src="../images/logo.png" alt="logo" class="nav-logo">
             </div>
-            <div class="nav-list-div">
+            <div class="burger" id="burger">
+                <span></span>
+            </div>
+            <div class="nav-list-div" id="nav-list">
                 <ul>
-                    <li><a href="#catalog" class="ancor">Каталог</a></li>
-                    <li><a href="#about-us" class="ancor">Про нас</a></li>
-                    <li><a href="#your-bouquet" class="ancor">Збери букет</a></li>
-                    <li><a href="#contacts" class="ancor">Контакти</a></li>
+                    <li><a href="#catalog" class="ancor" id="nav-link">Каталог</a></li>
+                    <li><a href="#about-us" class="ancor" id="nav-link">Про нас</a></li>
+                    <li><a href="#your-bouquet" class="ancor" id="nav-link">Збери букет</a></li>
+                    <li><a href="#contacts" class="ancor" id="nav-link">Контакти</a></li>
                 </ul>
             </div>
             <div  class="nav-icons-div">
@@ -35,12 +39,12 @@
 
     <header>
 
-        <button class="button-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+        <button class="button-to-top" id="button-to-top"><i class="fa-solid fa-arrow-up"></i></button>
 
         <div class="header-content">
             <div class="header-content-inner">
                 <h1>Букет із кущових троянд "Довгоочікуване щастя"</h1>
-                <h3>Ніжний та витончений шик у букет троянд - гарний вибір для коханої <br> людини</h3>
+                <h3>Ніжний та витончений шик у букет троянд - <br> гарний вибір для коханої <br> людини</h3>
                 <div class="header-buttons-div">
                     <button class="doc-button">В кошик</button>
                     <button class="doc-button" id="header-catalog-button">В каталог</button>
@@ -73,19 +77,20 @@
 
     <div class="about-us" id="about-us">
         <div class="about-us-inner">
-            <h1>Про нас</h1>
-            <h3>Яких квітів тут лише немає! І садові, і польові, і кімнатні у глиняних горщиках.
-                Очі розбігаються від такого достатку.</h3>
-            <h3>Тут представлена і багата колекція кімнатних рослин: кактуси різної форми та величини,
-                ніжні фіалки, усипані квітами, аспарагуси, фікуси.</h3>
+            <div class="about-us-inner-text">
+                <h1>Про нас</h1>
+                <h3>Яких квітів тут лише немає! І садові, і польові, і кімнатні у глиняних горщиках.
+                    Очі розбігаються від такого достатку.</h3>
+                <h3>Тут представлена і багата колекція кімнатних рослин: кактуси різної форми та величини,
+                    ніжні фіалки, усипані квітами, аспарагуси, фікуси.</h3>
+            </div>
         </div>
         <div class="about-us-inner-img">
-            <img src="../images/abstract_background.png" alt="abstract_background" class="img-abstr-bg">
-            <img src="../images/women.png" alt="women" id="women">
+            <img src="../images/about-ass.png" alt="abstract_background" class="img-abstr-bg">
             <div class="socials">
-                <a href="https://www.instagram.com/_cham0m1le_/"><img src="../images/inst.png" alt="inst"></a>
-                <a href="#" target="_blank"><img src="../images/fb.png" alt="facebook"></a>
-                <a href="#" target="_blank"><img src="../images/viber.png" alt="viber"></a>
+                <a class="inst" href="https://www.instagram.com/_cham0m1le_/"><img src="../images/inst.png" alt="inst"></a>
+                <a class="fb" href="#" target="_blank"><img src="../images/fb.png" alt="facebook"></a>
+                <a class="wb" href="#" target="_blank"><img src="../images/viber.png" alt="viber"></a>
             </div>
         </div>
         
@@ -114,301 +119,303 @@
 
     <main>
         <div class="catalog-wrapper" id="catalog">
-            <h1>Каталог</h1>
+            <div class="catalog_inner">
+                <h1>Каталог</h1>
+            
+                <div class="catalog">
+                    <div class="catalog-slider">
+    <!------------------------------------------------------------- page1 ----------------------------------------------------------->
+                        <div class="catalog-page">
+                            
+                            <div class="catalog-first-line"> 
+                                <div class="catalog-cell">
+                                    <img src="../images/bouquet_cart1.png" alt="bouquet_cart1">
+                                    <div class="catalog-cell-content">
+                                        <div class="catalog-cell-content-info">Ніжна свіжість:  троянди та лілії</div>
+                                        <div class="catalog-cell-content-price">445 грн</div>
+                                        <button class="doc-button">В кошик</button>
+                                    </div>
+                                </div>
+                                <div class="catalog-cell">
+                                    <img src="../images/bouquet_cart2.png" alt="bouquet_cart1">
+                                    <div class="catalog-cell-content">
+                                        <div class="catalog-cell-content-info">Сорбет:  хризантеми та троянди</div>
+                                        <div class="catalog-cell-content-price">450 грн</div>
+                                        <button class="doc-button">В кошик</button>
+                                    </div>
+                                </div>
+                                <div class="catalog-cell">
+                                    <img src="../images/bouquet_cart3.png" alt="bouquet_cart1">
+                                    <div class="catalog-cell-content">
+                                        <div class="catalog-cell-content-info">Yellow song:  соняшники та солідаго</div>
+                                        <div class="catalog-cell-content-price">455 грн</div>
+                                        <button class="doc-button">В кошик</button>
+                                    </div>
+                                </div>
+                            </div>
 
-            <div class="catalog">
-                <div class="catalog-slider">
-<!------------------------------------------------------------- page1 ----------------------------------------------------------->
-                    <div class="catalog-page">
-                        
-                        <div class="catalog-first-line"> 
-                            <div class="catalog-cell">
-                                <img src="../images/bouquet_cart1.png" alt="bouquet_cart1">
-                                <div class="catalog-cell-content">
-                                    <div class="catalog-cell-content-info">Ніжна свіжість: <br> троянди та лілії</div>
-                                    <div class="catalog-cell-content-price">445 грн</div>
-                                    <button class="doc-button">В кошик</button>
+                            <div class="catalog-second-line">
+                                <div class="catalog-cell">
+                                    <img src="../images/bouquet_cart4.png" alt="bouquet_cart1">
+                                    <div class="catalog-cell-content">
+                                        <div class="catalog-cell-content-info">Персиковий нектар:  лілії та троянди</div>
+                                        <div class="catalog-cell-content-price">455 грн</div>
+                                        <button class="doc-button">В кошик</button>
+                                    </div>
+                                </div>
+                                <div class="catalog-cell">
+                                    <img src="../images/bouquet_cart5.png" alt="bouquet_cart1">
+                                    <div class="catalog-cell-content">
+                                        <div class="catalog-cell-content-info">Аврора:  лілії та троянди</div>
+                                        <div class="catalog-cell-content-price">460 грн</div>
+                                        <button class="doc-button">В кошик</button>
+                                    </div>
+                                </div>
+                                <div class="catalog-cell">
+                                    <img src="../images/bouquet_cart6.png" alt="bouquet_cart1">
+                                    <div class="catalog-cell-content">
+                                        <div class="catalog-cell-content-info">Класика кохання:  червоних троянд</div>
+                                        <div class="catalog-cell-content-price">455 грн</div>
+                                        <button class="doc-button">В кошик</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="catalog-cell">
-                                <img src="../images/bouquet_cart2.png" alt="bouquet_cart1">
-                                <div class="catalog-cell-content">
-                                    <div class="catalog-cell-content-info">Сорбет: <br> хризантеми та троянди</div>
-                                    <div class="catalog-cell-content-price">450 грн</div>
-                                    <button class="doc-button">В кошик</button>
-                                </div>
-                            </div>
-                            <div class="catalog-cell">
-                                <img src="../images/bouquet_cart3.png" alt="bouquet_cart1">
-                                <div class="catalog-cell-content">
-                                    <div class="catalog-cell-content-info">Yellow song: <br> соняшники та солідаго</div>
-                                    <div class="catalog-cell-content-price">455 грн</div>
-                                    <button class="doc-button">В кошик</button>
-                                </div>
-                            </div>
+
                         </div>
+    <!-------------------------------------------------------------- page2 --------------------------------------------------------->
+                        <div class="catalog-page">
+                            
+                            <div class="catalog-first-line"> 
+                                <div class="catalog-cell">
+                                    <img src="../images/bouquet_cart1.png" alt="bouquet_cart1">
+                                    <div class="catalog-cell-content">
+                                        <div class="catalog-cell-content-info">Ніжна свіжість: <br> троянди та лілії</div>
+                                        <div class="catalog-cell-content-price">445 грн</div>
+                                        <button class="doc-button">В кошик</button>
+                                    </div>
+                                </div>
+                                <div class="catalog-cell">
+                                    <img src="../images/bouquet_cart1.png" alt="bouquet_cart1">
+                                    <div class="catalog-cell-content">
+                                        <div class="catalog-cell-content-info">Сорбет: <br> хризантеми та троянди</div>
+                                        <div class="catalog-cell-content-price">450 грн</div>
+                                        <button class="doc-button">В кошик</button>
+                                    </div>
+                                </div>
+                                <div class="catalog-cell">
+                                    <img src="../images/bouquet_cart1.png" alt="bouquet_cart1">
+                                    <div class="catalog-cell-content">
+                                        <div class="catalog-cell-content-info">Yellow song: <br> соняшники та солідаго</div>
+                                        <div class="catalog-cell-content-price">455 грн</div>
+                                        <button class="doc-button">В кошик</button>
+                                    </div>
+                                </div>
+                            </div>
 
-                        <div class="catalog-second-line">
-                            <div class="catalog-cell">
-                                <img src="../images/bouquet_cart4.png" alt="bouquet_cart1">
-                                <div class="catalog-cell-content">
-                                    <div class="catalog-cell-content-info">Персиковий нектар: <br> лілії та троянди</div>
-                                    <div class="catalog-cell-content-price">455 грн</div>
-                                    <button class="doc-button">В кошик</button>
+                            <div class="catalog-second-line">
+                                <div class="catalog-cell">
+                                    <img src="../images/bouquet_cart1.png" alt="bouquet_cart1">
+                                    <div class="catalog-cell-content">
+                                        <div class="catalog-cell-content-info">Персиковий нектар: <br> лілії та троянди</div>
+                                        <div class="catalog-cell-content-price">455 грн</div>
+                                        <button class="doc-button">В кошик</button>
+                                    </div>
+                                </div>
+                                <div class="catalog-cell">
+                                    <img src="../images/bouquet_cart1.png" alt="bouquet_cart1">
+                                    <div class="catalog-cell-content">
+                                        <div class="catalog-cell-content-info">Аврора: <br> лілії та троянди</div>
+                                        <div class="catalog-cell-content-price">460 грн</div>
+                                        <button class="doc-button">В кошик</button>
+                                    </div>
+                                </div>
+                                <div class="catalog-cell">
+                                    <img src="../images/bouquet_cart1.png" alt="bouquet_cart1">
+                                    <div class="catalog-cell-content">
+                                        <div class="catalog-cell-content-info">Класика кохання: <br> червоних троянд</div>
+                                        <div class="catalog-cell-content-price">455 грн</div>
+                                        <button class="doc-button">В кошик</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="catalog-cell">
-                                <img src="../images/bouquet_cart5.png" alt="bouquet_cart1">
-                                <div class="catalog-cell-content">
-                                    <div class="catalog-cell-content-info">Аврора: <br> лілії та троянди</div>
-                                    <div class="catalog-cell-content-price">460 грн</div>
-                                    <button class="doc-button">В кошик</button>
+
+                        </div>
+    <!------------------------------------------------------------- page3 ----------------------------------------------------------->
+                        <div class="catalog-page">
+                            
+                            <div class="catalog-first-line"> 
+                                <div class="catalog-cell">
+                                    <img src="../images/bouquet_cart4.png" alt="bouquet_cart1">
+                                    <div class="catalog-cell-content">
+                                        <div class="catalog-cell-content-info">Ніжна свіжість: <br> троянди та лілії</div>
+                                        <div class="catalog-cell-content-price">445 грн</div>
+                                        <button class="doc-button">В кошик</button>
+                                    </div>
+                                </div>
+                                <div class="catalog-cell">
+                                    <img src="../images/bouquet_cart4.png" alt="bouquet_cart1">
+                                    <div class="catalog-cell-content">
+                                        <div class="catalog-cell-content-info">Сорбет: <br> хризантеми та троянди</div>
+                                        <div class="catalog-cell-content-price">450 грн</div>
+                                        <button class="doc-button">В кошик</button>
+                                    </div>
+                                </div>
+                                <div class="catalog-cell">
+                                    <img src="../images/bouquet_cart4.png" alt="bouquet_cart1">
+                                    <div class="catalog-cell-content">
+                                        <div class="catalog-cell-content-info">Yellow song: <br> соняшники та солідаго</div>
+                                        <div class="catalog-cell-content-price">455 грн</div>
+                                        <button class="doc-button">В кошик</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="catalog-cell">
-                                <img src="../images/bouquet_cart6.png" alt="bouquet_cart1">
-                                <div class="catalog-cell-content">
-                                    <div class="catalog-cell-content-info">Класика кохання: <br> червоних троянд</div>
-                                    <div class="catalog-cell-content-price">455 грн</div>
-                                    <button class="doc-button">В кошик</button>
+
+                            <div class="catalog-second-line">
+                                <div class="catalog-cell">
+                                    <img src="../images/bouquet_cart4.png" alt="bouquet_cart1">
+                                    <div class="catalog-cell-content">
+                                        <div class="catalog-cell-content-info">Персиковий нектар: <br> лілії та троянди</div>
+                                        <div class="catalog-cell-content-price">455 грн</div>
+                                        <button class="doc-button">В кошик</button>
+                                    </div>
+                                </div>
+                                <div class="catalog-cell">
+                                    <img src="../images/bouquet_cart4.png" alt="bouquet_cart1">
+                                    <div class="catalog-cell-content">
+                                        <div class="catalog-cell-content-info">Аврора: <br> лілії та троянди</div>
+                                        <div class="catalog-cell-content-price">460 грн</div>
+                                        <button class="doc-button">В кошик</button>
+                                    </div>
+                                </div>
+                                <div class="catalog-cell">
+                                    <img src="../images/bouquet_cart4.png" alt="bouquet_cart1">
+                                    <div class="catalog-cell-content">
+                                        <div class="catalog-cell-content-info">Класика кохання: <br> червоних троянд</div>
+                                        <div class="catalog-cell-content-price">455 грн</div>
+                                        <button class="doc-button">В кошик</button>
+                                    </div>
                                 </div>
                             </div>
+
+                        </div>
+    <!------------------------------------------------------------- page4 ----------------------------------------------------------->
+                        <div class="catalog-page">
+                            
+                            <div class="catalog-first-line"> 
+                                <div class="catalog-cell">
+                                    <img src="../images/bouquet_cart5.png" alt="bouquet_cart1">
+                                    <div class="catalog-cell-content">
+                                        <div class="catalog-cell-content-info">Ніжна свіжість: <br> троянди та лілії</div>
+                                        <div class="catalog-cell-content-price">445 грн</div>
+                                        <button class="doc-button">В кошик</button>
+                                    </div>
+                                </div>
+                                <div class="catalog-cell">
+                                    <img src="../images/bouquet_cart5.png" alt="bouquet_cart1">
+                                    <div class="catalog-cell-content">
+                                        <div class="catalog-cell-content-info">Сорбет: <br> хризантеми та троянди</div>
+                                        <div class="catalog-cell-content-price">450 грн</div>
+                                        <button class="doc-button">В кошик</button>
+                                    </div>
+                                </div>
+                                <div class="catalog-cell">
+                                    <img src="../images/bouquet_cart5.png" alt="bouquet_cart1">
+                                    <div class="catalog-cell-content">
+                                        <div class="catalog-cell-content-info">Yellow song: <br> соняшники та солідаго</div>
+                                        <div class="catalog-cell-content-price">455 грн</div>
+                                        <button class="doc-button">В кошик</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="catalog-second-line">
+                                <div class="catalog-cell">
+                                    <img src="../images/bouquet_cart5.png" alt="bouquet_cart1">
+                                    <div class="catalog-cell-content">
+                                        <div class="catalog-cell-content-info">Персиковий нектар: <br> лілії та троянди</div>
+                                        <div class="catalog-cell-content-price">455 грн</div>
+                                        <button class="doc-button">В кошик</button>
+                                    </div>
+                                </div>
+                                <div class="catalog-cell">
+                                    <img src="../images/bouquet_cart5.png" alt="bouquet_cart1">
+                                    <div class="catalog-cell-content">
+                                        <div class="catalog-cell-content-info">Аврора: <br> лілії та троянди</div>
+                                        <div class="catalog-cell-content-price">460 грн</div>
+                                        <button class="doc-button">В кошик</button>
+                                    </div>
+                                </div>
+                                <div class="catalog-cell">
+                                    <img src="../images/bouquet_cart5.png" alt="bouquet_cart1">
+                                    <div class="catalog-cell-content">
+                                        <div class="catalog-cell-content-info">Класика кохання: <br> червоних троянд</div>
+                                        <div class="catalog-cell-content-price">455 грн</div>
+                                        <button class="doc-button">В кошик</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+    <!------------------------------------------------------------- page5 ----------------------------------------------------------->
+                        <div class="catalog-page">
+                            
+                            <div class="catalog-first-line"> 
+                                <div class="catalog-cell">
+                                    <img src="../images/bouquet_cart6.png" alt="bouquet_cart1">
+                                    <div class="catalog-cell-content">
+                                        <div class="catalog-cell-content-info">Ніжна свіжість: <br> троянди та лілії</div>
+                                        <div class="catalog-cell-content-price">445 грн</div>
+                                        <button class="doc-button">В кошик</button>
+                                    </div>
+                                </div>
+                                <div class="catalog-cell">
+                                    <img src="../images/bouquet_cart6.png" alt="bouquet_cart1">
+                                    <div class="catalog-cell-content">
+                                        <div class="catalog-cell-content-info">Сорбет: <br> хризантеми та троянди</div>
+                                        <div class="catalog-cell-content-price">450 грн</div>
+                                        <button class="doc-button">В кошик</button>
+                                    </div>
+                                </div>
+                                <div class="catalog-cell">
+                                    <img src="../images/bouquet_cart6.png" alt="bouquet_cart1">
+                                    <div class="catalog-cell-content">
+                                        <div class="catalog-cell-content-info">Yellow song: <br> соняшники та солідаго</div>
+                                        <div class="catalog-cell-content-price">455 грн</div>
+                                        <button class="doc-button">В кошик</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="catalog-second-line">
+                                <div class="catalog-cell">
+                                    <img src="../images/bouquet_cart6.png" alt="bouquet_cart1">
+                                    <div class="catalog-cell-content">
+                                        <div class="catalog-cell-content-info">Персиковий нектар: <br> лілії та троянди</div>
+                                        <div class="catalog-cell-content-price">455 грн</div>
+                                        <button class="doc-button">В кошик</button>
+                                    </div>
+                                </div>
+                                <div class="catalog-cell">
+                                    <img src="../images/bouquet_cart6.png" alt="bouquet_cart1">
+                                    <div class="catalog-cell-content">
+                                        <div class="catalog-cell-content-info">Аврора: <br> лілії та троянди</div>
+                                        <div class="catalog-cell-content-price">460 грн</div>
+                                        <button class="doc-button">В кошик</button>
+                                    </div>
+                                </div>
+                                <div class="catalog-cell">
+                                    <img src="../images/bouquet_cart6.png" alt="bouquet_cart1">
+                                    <div class="catalog-cell-content">
+                                        <div class="catalog-cell-content-info">Класика кохання: <br> червоних троянд</div>
+                                        <div class="catalog-cell-content-price">455 грн</div>
+                                        <button class="doc-button">В кошик</button>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
 
                     </div>
-<!-------------------------------------------------------------- page2 --------------------------------------------------------->
-                    <div class="catalog-page">
-                        
-                        <div class="catalog-first-line"> 
-                            <div class="catalog-cell">
-                                <img src="../images/bouquet_cart1.png" alt="bouquet_cart1">
-                                <div class="catalog-cell-content">
-                                    <div class="catalog-cell-content-info">Ніжна свіжість: <br> троянди та лілії</div>
-                                    <div class="catalog-cell-content-price">445 грн</div>
-                                    <button class="doc-button">В кошик</button>
-                                </div>
-                            </div>
-                            <div class="catalog-cell">
-                                <img src="../images/bouquet_cart1.png" alt="bouquet_cart1">
-                                <div class="catalog-cell-content">
-                                    <div class="catalog-cell-content-info">Сорбет: <br> хризантеми та троянди</div>
-                                    <div class="catalog-cell-content-price">450 грн</div>
-                                    <button class="doc-button">В кошик</button>
-                                </div>
-                            </div>
-                            <div class="catalog-cell">
-                                <img src="../images/bouquet_cart1.png" alt="bouquet_cart1">
-                                <div class="catalog-cell-content">
-                                    <div class="catalog-cell-content-info">Yellow song: <br> соняшники та солідаго</div>
-                                    <div class="catalog-cell-content-price">455 грн</div>
-                                    <button class="doc-button">В кошик</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="catalog-second-line">
-                            <div class="catalog-cell">
-                                <img src="../images/bouquet_cart1.png" alt="bouquet_cart1">
-                                <div class="catalog-cell-content">
-                                    <div class="catalog-cell-content-info">Персиковий нектар: <br> лілії та троянди</div>
-                                    <div class="catalog-cell-content-price">455 грн</div>
-                                    <button class="doc-button">В кошик</button>
-                                </div>
-                            </div>
-                            <div class="catalog-cell">
-                                <img src="../images/bouquet_cart1.png" alt="bouquet_cart1">
-                                <div class="catalog-cell-content">
-                                    <div class="catalog-cell-content-info">Аврора: <br> лілії та троянди</div>
-                                    <div class="catalog-cell-content-price">460 грн</div>
-                                    <button class="doc-button">В кошик</button>
-                                </div>
-                            </div>
-                            <div class="catalog-cell">
-                                <img src="../images/bouquet_cart1.png" alt="bouquet_cart1">
-                                <div class="catalog-cell-content">
-                                    <div class="catalog-cell-content-info">Класика кохання: <br> червоних троянд</div>
-                                    <div class="catalog-cell-content-price">455 грн</div>
-                                    <button class="doc-button">В кошик</button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-<!------------------------------------------------------------- page3 ----------------------------------------------------------->
-                    <div class="catalog-page">
-                        
-                        <div class="catalog-first-line"> 
-                            <div class="catalog-cell">
-                                <img src="../images/bouquet_cart4.png" alt="bouquet_cart1">
-                                <div class="catalog-cell-content">
-                                    <div class="catalog-cell-content-info">Ніжна свіжість: <br> троянди та лілії</div>
-                                    <div class="catalog-cell-content-price">445 грн</div>
-                                    <button class="doc-button">В кошик</button>
-                                </div>
-                            </div>
-                            <div class="catalog-cell">
-                                <img src="../images/bouquet_cart4.png" alt="bouquet_cart1">
-                                <div class="catalog-cell-content">
-                                    <div class="catalog-cell-content-info">Сорбет: <br> хризантеми та троянди</div>
-                                    <div class="catalog-cell-content-price">450 грн</div>
-                                    <button class="doc-button">В кошик</button>
-                                </div>
-                            </div>
-                            <div class="catalog-cell">
-                                <img src="../images/bouquet_cart4.png" alt="bouquet_cart1">
-                                <div class="catalog-cell-content">
-                                    <div class="catalog-cell-content-info">Yellow song: <br> соняшники та солідаго</div>
-                                    <div class="catalog-cell-content-price">455 грн</div>
-                                    <button class="doc-button">В кошик</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="catalog-second-line">
-                            <div class="catalog-cell">
-                                <img src="../images/bouquet_cart4.png" alt="bouquet_cart1">
-                                <div class="catalog-cell-content">
-                                    <div class="catalog-cell-content-info">Персиковий нектар: <br> лілії та троянди</div>
-                                    <div class="catalog-cell-content-price">455 грн</div>
-                                    <button class="doc-button">В кошик</button>
-                                </div>
-                            </div>
-                            <div class="catalog-cell">
-                                <img src="../images/bouquet_cart4.png" alt="bouquet_cart1">
-                                <div class="catalog-cell-content">
-                                    <div class="catalog-cell-content-info">Аврора: <br> лілії та троянди</div>
-                                    <div class="catalog-cell-content-price">460 грн</div>
-                                    <button class="doc-button">В кошик</button>
-                                </div>
-                            </div>
-                            <div class="catalog-cell">
-                                <img src="../images/bouquet_cart4.png" alt="bouquet_cart1">
-                                <div class="catalog-cell-content">
-                                    <div class="catalog-cell-content-info">Класика кохання: <br> червоних троянд</div>
-                                    <div class="catalog-cell-content-price">455 грн</div>
-                                    <button class="doc-button">В кошик</button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-<!------------------------------------------------------------- page4 ----------------------------------------------------------->
-                    <div class="catalog-page">
-                        
-                        <div class="catalog-first-line"> 
-                            <div class="catalog-cell">
-                                <img src="../images/bouquet_cart5.png" alt="bouquet_cart1">
-                                <div class="catalog-cell-content">
-                                    <div class="catalog-cell-content-info">Ніжна свіжість: <br> троянди та лілії</div>
-                                    <div class="catalog-cell-content-price">445 грн</div>
-                                    <button class="doc-button">В кошик</button>
-                                </div>
-                            </div>
-                            <div class="catalog-cell">
-                                <img src="../images/bouquet_cart5.png" alt="bouquet_cart1">
-                                <div class="catalog-cell-content">
-                                    <div class="catalog-cell-content-info">Сорбет: <br> хризантеми та троянди</div>
-                                    <div class="catalog-cell-content-price">450 грн</div>
-                                    <button class="doc-button">В кошик</button>
-                                </div>
-                            </div>
-                            <div class="catalog-cell">
-                                <img src="../images/bouquet_cart5.png" alt="bouquet_cart1">
-                                <div class="catalog-cell-content">
-                                    <div class="catalog-cell-content-info">Yellow song: <br> соняшники та солідаго</div>
-                                    <div class="catalog-cell-content-price">455 грн</div>
-                                    <button class="doc-button">В кошик</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="catalog-second-line">
-                            <div class="catalog-cell">
-                                <img src="../images/bouquet_cart5.png" alt="bouquet_cart1">
-                                <div class="catalog-cell-content">
-                                    <div class="catalog-cell-content-info">Персиковий нектар: <br> лілії та троянди</div>
-                                    <div class="catalog-cell-content-price">455 грн</div>
-                                    <button class="doc-button">В кошик</button>
-                                </div>
-                            </div>
-                            <div class="catalog-cell">
-                                <img src="../images/bouquet_cart5.png" alt="bouquet_cart1">
-                                <div class="catalog-cell-content">
-                                    <div class="catalog-cell-content-info">Аврора: <br> лілії та троянди</div>
-                                    <div class="catalog-cell-content-price">460 грн</div>
-                                    <button class="doc-button">В кошик</button>
-                                </div>
-                            </div>
-                            <div class="catalog-cell">
-                                <img src="../images/bouquet_cart5.png" alt="bouquet_cart1">
-                                <div class="catalog-cell-content">
-                                    <div class="catalog-cell-content-info">Класика кохання: <br> червоних троянд</div>
-                                    <div class="catalog-cell-content-price">455 грн</div>
-                                    <button class="doc-button">В кошик</button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-<!------------------------------------------------------------- page5 ----------------------------------------------------------->
-                    <div class="catalog-page">
-                        
-                        <div class="catalog-first-line"> 
-                            <div class="catalog-cell">
-                                <img src="../images/bouquet_cart6.png" alt="bouquet_cart1">
-                                <div class="catalog-cell-content">
-                                    <div class="catalog-cell-content-info">Ніжна свіжість: <br> троянди та лілії</div>
-                                    <div class="catalog-cell-content-price">445 грн</div>
-                                    <button class="doc-button">В кошик</button>
-                                </div>
-                            </div>
-                            <div class="catalog-cell">
-                                <img src="../images/bouquet_cart6.png" alt="bouquet_cart1">
-                                <div class="catalog-cell-content">
-                                    <div class="catalog-cell-content-info">Сорбет: <br> хризантеми та троянди</div>
-                                    <div class="catalog-cell-content-price">450 грн</div>
-                                    <button class="doc-button">В кошик</button>
-                                </div>
-                            </div>
-                            <div class="catalog-cell">
-                                <img src="../images/bouquet_cart6.png" alt="bouquet_cart1">
-                                <div class="catalog-cell-content">
-                                    <div class="catalog-cell-content-info">Yellow song: <br> соняшники та солідаго</div>
-                                    <div class="catalog-cell-content-price">455 грн</div>
-                                    <button class="doc-button">В кошик</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="catalog-second-line">
-                            <div class="catalog-cell">
-                                <img src="../images/bouquet_cart6.png" alt="bouquet_cart1">
-                                <div class="catalog-cell-content">
-                                    <div class="catalog-cell-content-info">Персиковий нектар: <br> лілії та троянди</div>
-                                    <div class="catalog-cell-content-price">455 грн</div>
-                                    <button class="doc-button">В кошик</button>
-                                </div>
-                            </div>
-                            <div class="catalog-cell">
-                                <img src="../images/bouquet_cart6.png" alt="bouquet_cart1">
-                                <div class="catalog-cell-content">
-                                    <div class="catalog-cell-content-info">Аврора: <br> лілії та троянди</div>
-                                    <div class="catalog-cell-content-price">460 грн</div>
-                                    <button class="doc-button">В кошик</button>
-                                </div>
-                            </div>
-                            <div class="catalog-cell">
-                                <img src="../images/bouquet_cart6.png" alt="bouquet_cart1">
-                                <div class="catalog-cell-content">
-                                    <div class="catalog-cell-content-info">Класика кохання: <br> червоних троянд</div>
-                                    <div class="catalog-cell-content-price">455 грн</div>
-                                    <button class="doc-button">В кошик</button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -438,69 +445,114 @@
                     <div class="vidguki-slider">
                         
                         <div class="vidguki-page">
+
                             <div class="vidguki-line1">
-                                <div class="vidguki-img"><img src="../images/reviews-photo2.png" alt=""></div>
-                                <div class="vidguk-text">
-                                    "Сам не фахівець з квітів, але дружині дуже сподобався оригінальний 
-                                    весняний букет, зібраний із ползитивним настроєм. Залишаю свій  
-                                    позитивний відгук магазину на вул.Добровольчих батальонів."
+                                <div class="vidguki-content">
+                                    <div class="vidguki-content-inner">
+                                        <img src="../images/reviews-photo2.png" alt="photo2">
+                                        <div class="vidguk-text">
+                                            <div class="vidguk-info">
+                                                "Сам не фахівець з квітів, але дружині дуже сподобався оригінальний 
+                                                весняний букет, зібраний із ползитивним настроєм. Залишаю свій  
+                                                позитивний відгук магазину на вул.Добровольчих батальонів."
+                                            </div>                                    
+                                            <div class="pidpis">Володимир 19.06.22</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="pidpis">Володимир 19.06.22</div>
                             </div>
+
                             <div class="vidguki-line2">
-                                <div class="vidguki-img"><img src="../images/reviews-photo1.png" alt=""></div>
-                                <div class="vidguk-text">
-                                    "Замовляла квіти у неробочий час (увечері), але зі мною дуже оперативно 
-                                    зв'язався спіробітник та пообіцяв доставити букет вранці у призначений 
-                                    час. Так і сталося, квіти були доставлені з точністю секунда в секунду, 
-                                    свіжі та красиві. Рекомендую."
+                                <div class="vidguki-content">
+                                    <div class="vidguki-content-inner">
+                                        <img src="../images/reviews-photo1.png" alt="photo1">
+                                        <div class="vidguk-text">                        
+                                            <div class="vidguk-info">
+                                                "Замовляла квіти у неробочий час (увечері), але зі мною дуже оперативно 
+                                                зв'язався спіробітник та пообіцяв доставити букет вранці у призначений 
+                                                час. Так і сталося, квіти були доставлені з точністю секунда в секунду, 
+                                                свіжі та красиві. Рекомендую."
+                                            </div>
+                                            <div class="pidpis">Людмила 03.04.22</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="pidpis">Людмила 03.04.22</div>
                             </div>
+
                         </div>
 
                         <div class="vidguki-page">
+
                             <div class="vidguki-line1">
-                                <div class="vidguki-img"><img src="../images/reviews-photo2.png" alt=""></div>
-                                <div class="vidguk-text">
-                                    "Сам не фахівець з квітів, але дружині дуже сподобався оригінальний 
-                                    весняний букет, зібраний із ползитивним настроєм. Залишаю свій  
-                                    позитивний відгук магазину на вул.Добровольчих батальонів."
+                                <div class="vidguki-content">
+                                    <div class="vidguki-content-inner">
+                                        <img src="../images/reviews-photo2.png" alt="photo2">
+                                        <div class="vidguk-text">
+                                            <div class="vidguk-info">
+                                                "Сам не фахівець з квітів, але дружині дуже сподобався оригінальний 
+                                                весняний букет, зібраний із ползитивним настроєм. Залишаю свій  
+                                                позитивний відгук магазину на вул.Добровольчих батальонів."
+                                            </div>                                    
+                                            <div class="pidpis">Володимир 19.06.22</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="pidpis">Володимир 19.06.22</div>
                             </div>
+
                             <div class="vidguki-line2">
-                                <div class="vidguki-img"><img src="../images/reviews-photo2.png" alt=""></div>
-                                <div class="vidguk-text">
-                                    "Сам не фахівець з квітів, але дружині дуже сподобався оригінальний 
-                                    весняний букет, зібраний із ползитивним настроєм. Залишаю свій  
-                                    позитивний відгук магазину на вул.Добровольчих батальонів."
+                                <div class="vidguki-content">
+                                    <div class="vidguki-content-inner">
+                                        <img src="../images/reviews-photo2.png" alt="photo1">
+                                        <div class="vidguk-text">                        
+                                            <div class="vidguk-info">
+                                                "Сам не фахівець з квітів, але дружині дуже сподобався оригінальний 
+                                                весняний букет, зібраний із ползитивним настроєм. Залишаю свій  
+                                                позитивний відгук магазину на вул.Добровольчих батальонів."
+                                            </div>
+                                            <div class="pidpis">Володимир 19.06.22</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="pidpis">Володимир 19.06.22</div>
                             </div>
+
                         </div>
 
                         <div class="vidguki-page">
+
                             <div class="vidguki-line1">
-                                <div class="vidguki-img"><img src="../images/reviews-photo1.png" alt=""></div>
-                                <div class="vidguk-text">
-                                    "Замовляла квіти у неробочий час (увечері), але зі мною дуже оперативно 
-                                    зв'язався спіробітник та пообіцяв доставити букет вранці у призначений 
-                                    час. Так і сталося, квіти були доставлені з точністю секунда в секунду, 
-                                    свіжі та красиві. Рекомендую."
+                                <div class="vidguki-content">
+                                    <div class="vidguki-content-inner">
+                                        <img src="../images/reviews-photo1.png" alt="photo2">
+                                        <div class="vidguk-text">
+                                            <div class="vidguk-info">
+                                                "Замовляла квіти у неробочий час (увечері), але зі мною дуже оперативно 
+                                                зв'язався спіробітник та пообіцяв доставити букет вранці у призначений 
+                                                час. Так і сталося, квіти були доставлені з точністю секунда в секунду, 
+                                                свіжі та красиві. Рекомендую."
+                                            </div>                                    
+                                            <div class="pidpis">Людмила 03.04.22</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="pidpis">Людмила 03.04.22</div>
                             </div>
+
                             <div class="vidguki-line2">
-                                <div class="vidguki-img"><img src="../images/reviews-photo1.png" alt=""></div>
-                                <div class="vidguk-text">
-                                    "Замовляла квіти у неробочий час (увечері), але зі мною дуже оперативно 
-                                    зв'язався спіробітник та пообіцяв доставити букет вранці у призначений 
-                                    час. Так і сталося, квіти були доставлені з точністю секунда в секунду, 
-                                    свіжі та красиві. Рекомендую."
+                                <div class="vidguki-content">
+                                    <div class="vidguki-content-inner">
+                                        <img src="../images/reviews-photo1.png" alt="photo1">
+                                        <div class="vidguk-text">                        
+                                            <div class="vidguk-info">
+                                                "Замовляла квіти у неробочий час (увечері), але зі мною дуже оперативно 
+                                                зв'язався спіробітник та пообіцяв доставити букет вранці у призначений 
+                                                час. Так і сталося, квіти були доставлені з точністю секунда в секунду, 
+                                                свіжі та красиві. Рекомендую."
+                                            </div>
+                                            <div class="pidpis">Людмила 03.04.22</div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="pidpis">Людмила 03.04.22</div>
                             </div>
+
                         </div>
                         
                     </div> 
@@ -528,7 +580,7 @@
                         <input type="text" placeholder="Ваше ім'я" maxlength="15">
                         <textarea name="vidguk" id="vidguk-textarea" maxlength="300" placeholder="Ваш відгук:"></textarea>
                         <div id="symbol-counter"></div>
-                        <input type="submit">
+                        <input type="submit" value="Надіслати">
                     </form>
                 </div>
 
@@ -567,19 +619,19 @@
                     <div class="steps-line">
 
                         <div class="step">
-                            <div class="circle">1</div>
+                            <div class="circle">4</div>
                             <div class="step-text">
                                 Надсилаємо фото зібраного букета, щоб узгодити <br> все
                             </div>
                         </div>
                         <div class="step">
-                            <div class="circle">2</div>
+                            <div class="circle">5</div>
                             <div class="step-text">
-                                Доставляємо букет одержувачу протягом 2-х <br> годин
+                                Доставляємо букет одержувачу протягом 2-х  годин
                             </div>
                         </div>
                         <div class="step">
-                            <div class="circle">3</div>
+                            <div class="circle">6</div>
                             <div class="step-text">
                                 Сповістимо Вас дзвінком або повідомленням про доставку букета
                             </div>
@@ -605,7 +657,7 @@
                     </div>
                     <div class="column">
                         <h4>Інформація</h4>
-                        <p><a href="about-us" class="ancor">Про нас</a></p>
+                        <p><a href="#about-us" class="ancor">Про нас</a></p>
                         <p><a href="#" class="ancor">Хіт продажу</a></p>
                         <p><a href="#vidguki" class="ancor">Відгуки</a></p>
                         <p><a href="#dostavka-i-oplata" class="ancor">Доставка і оплата</a></p>

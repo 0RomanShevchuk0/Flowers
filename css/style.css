@@ -29,58 +29,67 @@ nav .first-nav{
     margin: 0px;
     padding: 0px;
     border: 0px;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100px;
     background: #A9BFE4;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    position: fixed; margin-top: -100px; 
-    z-index: 10000;
-    min-width: 1300px;
+    position: fixed;  
+    z-index: 1000;
 }
 /* ------------------------------------------------------------Navigation divs---------------------------------------------------------- */
 nav .nav-list-div{
-    flex-grow: 8;
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    z-index: 4;
 }
 
 nav .nav-logo-div{
-    flex-grow: 2;
+    width: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 100px;
     cursor: pointer;
 }
 
 nav .nav-icons-div{
-    flex-grow: 1;
+    width: 7%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 100px;
 }
+
+.burger{
+    display: none;
+}
+
 /* --------------------------------------------------------------Navigation divs end------------------------------------------------------- */
 nav .nav-logo{
     width: 200px;
+    z-index: 5;
 }
 
 nav .nav-icons{
-    width: 30px;
+    width: 35px;
     padding-left: 15px ;
     padding-right: 15px ;
 }
 
 nav ul{
     list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
 }
 
 nav ul li{
-    display: inline-block;
-    margin-left: 50px;
+    margin: 0 20px;
 }
 
 nav ul a{
@@ -127,7 +136,7 @@ header{
     height: 700px;
     display: flex;
     align-items: center;
-    margin-top: 100px;  
+    margin-top: 80px;
 }
 
 header .header-content{
@@ -149,7 +158,7 @@ header .header-img{
     justify-content: flex-end;
 }
 header .header-img img{
-    height: 600px;
+    width: 125%;
 }
 
 /* ------------------------------------------------------------Butoons---------------------------------------------------------- */
@@ -252,19 +261,22 @@ nav .second-nav-cell{
 }
 
 nav .second-nav-cell img{
-    width:382px;
-    height: 220px;
+    object-fit: cover;
+    width: 100%;    
+    max-height: 220px;
     box-shadow: 0px 5px 15px 2px #a89a9b;
 }
 
 nav .second-nav-cell .button{
-    width: 200px;
+    width: 60%;
     height: 50px;
-    z-index: 10;
+    z-index: 2;
     position: absolute;
     bottom: 15px;
-    margin-left: -76%;
-    background: #A9BFE4;
+    margin: 0 auto;
+    margin-left: -80%;
+    padding: 0;
+    background: #d9e3f0;
     color: white;
     border: none;
     font-size: 20px;
@@ -299,7 +311,7 @@ nav .second-nav-cell .button:hover{
     width: 45%;
 }
 
-.about-us-inner h3{
+ h3{
     padding-left: 25px;
 }
 
@@ -314,49 +326,63 @@ nav .second-nav-cell .button:hover{
 }
 
 .about-us-inner-img{
+    right: 0;
     width: 55%;
-    height: 550px;
-}
-
-#women{
-    position: absolute;
-    height: 370px;
-    margin-top: 100px;
-    margin-left: -20px;
+    height: 100%;
+    position: relative;
+    /* border: 2px solid black; */
 }
 
 .socials{
     position: absolute;
     display: flex;
-    flex-direction: column;
-    right: 50px;
-    margin-top: 120px;
+    margin-left: 150px;
+    margin-top: 270px;
+    transform: rotate(40deg);
 }
 
 .socials img{
+    transform: rotate(-40deg);
     width: 50px;
     height: 50px;
-    margin: 10px auto;
+    margin: 10px 20px;
     transition: 0.6s;
     cursor: pointer;
     border-radius: 12px;
+    border: 1px solid transparent;
+}
+
+.inst img{
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.fb img{
+    background: #3b5998;
+}
+
+.wb img{
+    background: #7360F2
 }
 
 .socials img:hover{
-    transform: scale(1.1);
+    transform: scale(1.1) rotate(-40deg);
     box-shadow: 0px 4px 5px 1px rgb(146, 146, 146);
 }
 
 /* ------------------------------------------------------------Working for u---------------------------------------------------------- */
 .about-us-inner-img .img-abstr-bg{
-    width: 700px;
+    width: 100%;
     float: right;
 }
 
 .working-for-u{
     width: 100%;
     height: 200px;
-    background: #d3dff0;
+    background: rgba(187, 187, 233, 0.4);
 }
 
 .working-for-u h2{
@@ -377,7 +403,7 @@ nav .second-nav-cell .button:hover{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    z-index: 30;
+    z-index: 2;
     text-align: center;
 }
 
@@ -399,18 +425,41 @@ main .catalog-wrapper{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    overflow: hidden;
+    
 }
 
-main .catalog-wrapper h1{
+.catalog_inner h1{
     align-self: flex-start;
     margin-left: 13.5%;
+}
+
+.catalog_inner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 /* ------------------------------------------------------------Catalog---------------------------------------------------------- */
 
 main .catalog{
-    width: 73.5%;
+    width: 100%;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .catalog-slider{
+    width: 1170px;
+    display: flex;
+    overflow: hidden;
+}
+
+.catalog-page{
+    transition: 0.6s;
 }
 
 main .catalog-first-line,
@@ -439,6 +488,7 @@ main .catalog-cell:hover{
 }
 
 main .catalog-cell img{
+    object-fit: cover;
     width: 100%;
     height: 350px;
 }
@@ -448,22 +498,23 @@ main .catalog-cell-content{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-main .catalog-cell-content-info,
-main .catalog-cell-content-price{
     text-align: center;
     font-family: 'Lora', serif;
     font-size: 24px;
 }
 
 main .catalog-cell-content-info{
-    width: 80%;
+    width: 75%;
+    height: 60px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
     margin-top: 10px;
     margin-bottom: 10px;
     word-wrap: break-word;
 }
-
 main .catalog-cell-content-price{
     width: 100px;
 }
@@ -471,16 +522,6 @@ main .catalog-cell-content-price{
 nav .catalog-nav-wrapper{
     width: 100%;
     box-sizing: border-box;
-}
-
-main .catalog-slider{
-    width: 1170px;
-    display: flex;
-    overflow: hidden;
-}
-
-.catalog-page{
-    transition: 0.6s;
 }
 
 /* ------------------------------------------------------------Catalog nav---------------------------------------------------------- */
@@ -591,7 +632,7 @@ nav .nav-button-next:hover .span-nav-next::after{
 
 #flowers1{
     position: absolute;
-    z-index: 20;
+    z-index: 2;
     width: 300px;
     margin-top: -80px;
     right: 0;
@@ -599,11 +640,11 @@ nav .nav-button-next:hover .span-nav-next::after{
 
 #flowers2{
     position: absolute;
-    z-index: 20;
+    z-index: 2;
     width: 300px;
     left: 0;
-    margin-top: -290px;
-    transform: rotate(10deg);
+    margin-top: -150px;
+    transform: rotate(10deg);   
 }
 
 #flowers3{
@@ -611,25 +652,24 @@ nav .nav-button-next:hover .span-nav-next::after{
     right: -270px;
     top: 500px;
     transform: rotate(-60deg);
-    z-index: 20;
+    z-index: 2;
 }
 
 /* ------------------------------------------------------------Vidguki---------------------------------------------------------- */
 
 .vidguki{
     width: 100%;
-    height: 900px;
+    height: 1000px;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    background: #d9e3f0;
+    background: rgba(187, 187, 233, 0.4);
 }
 
 .vidguki h1{
     margin: 10px;
-    font-size: 36px;
 }
 
 .vidguki h2{
@@ -639,64 +679,85 @@ nav .nav-button-next:hover .span-nav-next::after{
 }
 
 .vidguki-inner{
-    width: 1170px;
+    width: 73.5%;
     height: 1000px;
 }
 
 .vidguki-catalog-wrapper{
-    height: 400px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
-
 .vidguki-slider{
+    margin-top: 10px;
     width: 1170px;
     display: flex;
     overflow: hidden;
-    height: 400px;
-    position: relative;
-    box-sizing: border-box;
-    
 }
-
 .vidguki-page{
-    min-width: 1170px;
-    height: 400px;
     transition: 0.6s;
 }
-
 .vidguki-line1,
 .vidguki-line2{
-    width: 900px;
+    width: 100%;
     height: 200px;
     box-sizing: border-box;
+    display: flex;
 }
 
-.vidguki-line2{
-    margin-left: 20%;
+.vidguki-content{
+    width: 1170px;
+    position: relative;
 }
 
-.vidguki-img img{
-    margin-left: 3%;
+.vidguki-content-inner{
+    position: absolute;
+    display: flex;
+    width: 75%;
+    height: 220px;
+}
+
+.vidguki-content-inner img{
     width: 180px;
     height: 180px;
-    float: left;
+    margin: 0 40px 0 0;
+}
+
+.vidguki-line1 .vidguki-content-inner{   
+    left: 0;
+}
+.vidguki-line2 .vidguki-content-inner{
+    right: 0;
 }
 
 .vidguk-text{
-    width: 550px;
-    height: 140px;
-    margin-left: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     padding: 10px 10px;
     box-sizing: border-box;
     word-wrap: break-word;
-    font-size: 21px;
+    font-size: 24px;
+    text-overflow: ellipsis;
+}
+
+.vidguk-info{
+    width: 100%;
+    /* height: 180px; */
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .pidpis{
-    width: 700px;
+    width: 60%;
     height: 40px;
-    padding: 7px 10px;
-    margin-left: 30%;
+    margin-top: 20px;
+    padding: 2% 0px;
     box-sizing: border-box;
     font-size: 21px;
     color: #788fb6;
@@ -816,8 +877,15 @@ footer{
     box-sizing: border-box;
     position: relative;
 }
+.dostavka-i-oplata-inner h1{
+    align-self: flex-start;
+}
 
 .dostavka-i-oplata-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 73.5%;
     height: 700px;
 }

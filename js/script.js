@@ -2,6 +2,26 @@ document.querySelector('#header-catalog-button').onclick = () => location.href =
 
 document.querySelector('.nav-logo-div').addEventListener('click', () => location.reload());
 
+document.querySelector('#burger').addEventListener('click',function(event){
+    this.classList.toggle('active');
+    document.querySelector('#nav-list').classList.toggle('active');
+    document.querySelector('body').classList.toggle('locked');
+    document.querySelector('#button-to-top').classList.toggle('locked');
+    document.querySelector('#first-nav').classList.toggle('active');
+})
+let navLinks = document.querySelectorAll('#nav-link');
+
+navLinks.forEach((navlink => {
+    navlink.addEventListener('click', function(){
+        document.querySelector('#burger').classList.toggle('active');
+        document.querySelector('#nav-list').classList.toggle('active');
+        document.querySelector('body').classList.toggle('locked');
+        document.querySelector('#button-to-top').classList.toggle('locked');
+        document.querySelector('#first-nav').classList.toggle('active');
+    })
+}));
+
+
 let buttonToTop = document.querySelector('.button-to-top');
 buttonToTop.addEventListener('click', () => {
     window.scrollBy({
@@ -61,7 +81,6 @@ document.querySelector('#vidguki-nav-prev').addEventListener('click', () => {
     vcount--;
     vidgukiSpan[vcount].classList.add('active');
 })
-console.log(vidgukiSpan.length);
 
 document.querySelector('#vidguki-nav-next').addEventListener('click', () => {
     if (vcount >= vidgukiSpan.length - 1) {

@@ -1,0 +1,685 @@
+@media only screen and (max-width:1580px) {
+    h1{
+        font-size: 38px;
+    }
+    h3{
+        font-size: 24px;
+    }
+
+    .vidguki-line2 .vidguki-content-inner{
+        margin-right: 130px;
+    }
+}
+
+@media only screen and (max-width:1380px) {
+    header {
+        height: 600px;
+    }
+
+    h1{
+        font-size: 32px;
+    }
+    h3{
+        font-size: 22px;
+    }
+
+    .doc-button{
+        width: 190px;
+        height: 48px;
+    }
+
+    .about-us-inner {
+        margin-top: 30px;
+    }
+
+    .catalog_inner h1{
+        margin-left: 8%;
+    }
+    .vidguki-inner{
+        width: 76%;
+    }
+    .vidguki-content{
+        width: 1050px;
+    }
+
+    .vidguki-line2 .vidguki-content-inner{
+        margin-right: 110px;
+    }
+
+    .socials{
+        margin-left: 110px;
+        margin-top: 300px;
+    }
+
+    #flowers1,#flowers2{
+        width: 250px;
+    }
+    #flowers3{
+        width: 230px;
+        margin-top: 70px;
+        right: -200px;
+        }
+    }
+
+@media only screen and (max-width:1200px) {
+
+    nav .first-nav{
+        height: 80px;
+    }
+    nav .nav-logo{
+        width: 150px;
+    }
+    nav .nav-icons{
+        width: 25px;
+    }
+    nav ul a{
+        font-size: 22px;
+    }
+
+    header {
+        height: 440px;
+        margin-top:100px;
+    }
+    header .header-content-inner{
+        width: 80%;
+    }
+    header .header-buttons-div{
+        justify-content: flex-start;
+        margin-left: -15px; 
+    }
+
+    nav .second-nav{
+        margin-bottom: -20px;
+    }
+    nav .second-nav-inner{
+        width: 95%;
+    }
+
+    .about-us-inner-img{
+        width: 55%;
+    }
+    .about-us{
+        width: 100%;
+        height: 350px;
+        margin-left: 0;
+    }
+    .about-us-inner{
+        margin-top: 0;
+        width: 60%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .about-us-inner-text{
+        width: 90%;
+    }
+
+    .working-for-u{
+        height: 160px;
+    }
+    .working-for-u h2{
+        margin-left: 9%;
+    }
+    .working-for-u-cells{
+        font-size: 14px;
+    }
+    .working-for-u-cell{
+        width: 180px;
+    }
+    .working-for-u-cell img{
+        width: 80px;
+    }
+
+    .catalog_inner h1{
+        margin-left: 2%;
+    }
+
+    .doc-button{
+        width: 210px;
+    }
+
+    .socials{
+        margin-left: 70px;
+        margin-top: 220px;
+    }
+    .socials img{
+        width: 45px;
+        height: 45px;
+    }
+
+    main .catalog-wrapper{
+        margin-top: 20px;
+    }
+    .catalog_inner h1{
+        margin-left: 10%;
+    }
+    main .catalog-slider{
+        width: 950px;
+    }
+    main .catalog-first-line,
+    main .catalog-second-line{
+        height: 430px;
+    }
+    main .catalog-cell-content{
+        font-size: 18px;
+    }
+    main .catalog-cell-content-info{
+        width: 100%;
+        height: 45px;
+    }
+    main .catalog-cell{
+        min-width: 250px;
+        min-height: 300px;
+        width: 280px;
+        height: 425px;
+    }
+    main .catalog-cell img{
+        height: 260px;
+    }
+    main .catalog-cell .doc-button{
+        margin-top: 15px;
+    }
+
+    .vidguki{
+        height: 920px;
+    }
+    .vidguki h1{
+        margin-left: -2%;
+    }
+    .vidguki-line2 .vidguki-content-inner{
+        left: 0;
+    }
+    .vidguki-content{
+        width: 1150px;
+    }
+    .vidguki-content-inner img{
+        width: 160px;
+        height: 160px;
+    }
+    .vidguk-text{
+        font-size: 23px;
+    }
+    .vidguk-info{
+        width: 85%;
+    }
+    .dodatu-vidguk input[type="submit"]{
+        width: 210px;
+    }
+
+    .dostavka-i-oplata{
+        height: 600px;
+    }
+    .dostavka-i-oplata-inner{
+        justify-content: center;
+    }
+    .steps-line{
+        align-items: center;
+        height: 240px;
+    }
+    .step{
+        width: 250px;
+        margin: 20px 20px;
+    }
+    .step .circle{
+        width: 120px;
+        height: 120px;
+    }
+    .step-text{
+        font-size: 16px;
+    }
+
+    #flowers1{
+        width: 200px;
+    }
+    #flowers2{
+        margin-top: -100px;
+        width: 200px;
+    }
+    #flowers3{
+        width: 150px;
+        margin-top: -60px;
+        right: -150px;
+    }
+
+    .footer-inner{
+        height: 250px;
+    }
+    .footer-content{
+        width: 100%;
+    }
+    .footer-text{
+        justify-content: center
+    }
+    .footer-text .column h4{
+        margin: 5px 0;
+    }
+    .footer-logo img{
+        width: 170px;
+    }
+    .footer-text .column{
+        width: 30%;
+        font-size: 14px;
+    }
+    footer p{
+        margin: 10px 0;
+    }
+    .footer-input{
+        justify-content: center;
+    }
+    .footer-input .input input{
+        width: 350px;
+        height: 38px;
+    }
+    .footer-input .input button{
+        height: 38px;
+    }
+    .footer-socials img{
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+    }
+    footer .copyright{
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    nav .first-nav{
+    }
+    nav .nav-list-div{
+        padding: 0 10px;
+        justify-content: space-between;
+    }
+    nav .nav-logo-div{
+        margin-left: 2%;
+    }
+    nav .nav-logo-div img{
+        width: 120px;
+    }
+    nav .nav-icons-div{
+        margin-right: 20px;
+    }
+    nav .nav-icons-div img{
+        width: 20px;
+    }
+    nav ul{
+        padding-left: 0;
+    }
+    nav ul a{
+        font-size: 20px;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+    h2{
+        font-size: 22px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    .doc-button{
+        width: 160px;
+        height: 44px;
+        margin: 10px;
+        padding: 0;
+    }
+
+    header{
+        margin-top: 50px;
+    }
+
+    nav .second-nav{
+        height: 200px;
+    }
+    nav .second-nav-inner{
+        width: 100%;
+        height: 180px;
+        box-sizing: border-box;
+    }
+    nav .second-nav-cell .button{
+        width: 50%;
+        height: 42px;
+        margin-left: -75%;
+    }
+    .about-us{
+        width: 100%;
+        height: 300px;
+        margin-left: 0px;
+        margin-bottom: -20px;
+    }
+    .about-us-inner h1{
+        margin-left: -20px;
+    }
+    .about-us-inner h3{
+        padding: 0;
+    }
+
+    .socials{
+        margin-left: 20px;
+        margin-top: 145px;
+    }
+    .socials img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .catalog_inner h1{
+        margin-left: 4%;
+    }
+    .catalog_inner{
+
+    }
+
+    main .catalog-wrapper{
+        margin-top: 0px;
+    }
+    main .catalog-slider{
+        width: 750px;
+    }
+    main .catalog-first-line,
+    main .catalog-second-line{
+        height: 350px;
+        justify-content: flex-start;
+    }
+    main .catalog-cell-content{
+        font-size: 15px;
+    }
+    main .catalog-cell-content-info{
+        width: 75%;
+        height: 35px;
+        margin-top: 5px;
+    }
+    main .catalog-cell{
+        min-width: 0px;
+        min-height: 0px;
+        width: 230px;
+        height: 330px;
+        margin: 0 10px;
+    }
+    main .catalog-cell img{
+        height: 200px;
+    }
+    main .catalog-cell .doc-button{
+        margin-top: 8px;
+    }
+    nav .catalog-nav{
+        height: 60px;
+    }
+    nav .nav-span{
+        width: 9px;
+        height: 9px;
+    }
+    nav .span-nav-prev::before, nav .span-nav-next::before{
+        width: 30px;
+    }
+
+    nav .span-nav-prev::before{
+        margin-left: -15px;
+    }
+    nav .span-nav-prev::after{
+        margin-left: -17px;
+    }
+    nav .span-nav-next::after{
+        margin-left: -1px;
+    }
+    
+    .vidguki{
+        height: 800px;
+    }
+    .vidguki-inner{
+        width: 85%;
+    }
+    .vidguki h2{
+        font-size: 22px;
+    }
+    .vidguki-line1, .vidguki-line2{
+        height: 170px;
+    }
+    .vidguki-content{
+        width: 1000px;
+    }
+    .vidguki-content-inner img{
+        width: 130px;
+        height: 130px;
+    }
+    .vidguk-text{
+        font-size: 18px;
+    }
+    .pidpis{
+        font-size: 18px;
+    }
+    .dodatu-vidguk input[type="text"]{
+        height: 36px;
+    }
+    .dodatu-vidguk textarea{
+        height: 100px;
+    }
+    .dodatu-vidguk input[type="submit"]{
+        width: 160px;
+        height: 44px;
+    }
+
+    #flowers1{
+        width: 140px;
+        margin-top: -70px;
+    }
+    #flowers2{
+        width: 140px;
+        margin-top: -100px;
+    }
+    #flowers3{
+        width: 130px;
+        margin-top: -30px;
+        right: -120px;
+    }
+
+    .dostavka-i-oplata{
+        width: 100%;
+        height: 600px;
+        margin: 0 auto;
+    }
+    .dostavka-i-oplata-inner{
+        width: 90%;
+        height: 90%;
+    }
+    .steps-line{
+        align-items: center;
+        height: 240px;
+    }
+    .step{
+        width: 200px;
+        margin: 10px 10px;
+    }
+    .step .circle{
+        width: 130px;
+        height: 130px;
+    }
+    .step-text{
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .footer-inner{
+        height: 240px;
+    }
+    .footer-logo img{
+        width: 150px;
+    }
+    .footer-text{
+        height: 160px;
+    }
+    .footer-text .column h4{
+        font-size: 20px;
+        margin: 5px 0;
+    }
+    .footer-text .column{
+        width: 30%;
+        height: 90%;
+        font-size: 14px;
+    }
+    footer p{
+        margin-bottom: 0;
+    }
+    .footer-input .input input{
+        width: 300px;
+        height: 36px;
+    }
+    .footer-input .input button{
+        width: 120px;
+        margin-left: -120px;
+        height: 36px;
+    }
+    .footer-socials img{
+        width: 40px;
+        height: 40px;
+        margin: 10px 15px;
+    }
+    footer .copyright{
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .footer-text .column a:hover{
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    body.locked{
+        overflow: hidden;
+    }
+    .button-to-top.active.locked{
+        display: none;
+    }
+
+    nav .first-nav{
+        justify-content: space-between;
+        height: 60px;
+        z-index: 5;
+        transition: 0.6s;
+    }
+    nav .first-nav.active{
+        background: #FFC2C7;
+    }
+    nav .nav-list-div{
+        transform: translateY(-100vh);
+        /* opacity: 0; */
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background: #FFC2C7;
+        transition: transform 0.6s;
+    }
+    nav .nav-list-div.active{
+        opacity: 1;
+        transform: translateY(60px);
+    }
+    nav .nav-list-div ul{
+        width: 100%;
+        height: 0px;
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+    nav .nav-list-div.active ul{
+        height: 100vh;
+    }
+    nav ul a{
+        margin-left: -10%;
+        width: 120%;
+        display: block;
+        padding: 10px 0;
+        font-size: 24px;
+        transition: 0.6s;
+        border-bottom: 1px solid black;
+    }
+    nav ul li a:hover::before{
+        position: absolute;
+        content: '';
+        width: 0; margin-left: 0;
+        height: 0;
+    }
+    
+    nav ul li a:hover::after{
+        position: absolute;
+        content: '';
+        width: 0; margin-left: 0;
+        height: 0;
+    }
+
+    nav .nav-icons-div{
+        display: none;
+    }
+    nav .nav-logo-div{
+        margin-left: 5%;
+    }
+    nav .nav-logo-div img{
+        width: 130px;
+    }
+
+    nav .burger{
+        display: block;
+        margin-right: 5%;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        background: transparent;
+        cursor: pointer;
+        z-index: 10;
+    }
+    nav .burger span{
+        position: absolute;
+        right: 0px;
+        width: 100%;
+        height: 2px;
+        bottom: calc(50% - 1px);
+        background: #FFC2C7;
+        box-shadow: 0 0 1.5px rgb(57, 49, 49);
+        transition: 0.6s;
+    }
+    nav .burger::before,
+    nav .burger::after{
+        content: '';
+        right: 0;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: #FFC2C7;
+        box-shadow: 0 0 1.5px rgb(57, 49, 49);
+        transition: 0.6s;
+    }
+    nav .burger::before{
+        top: 1px;
+    }
+    nav .burger::after{
+        bottom: 1px;
+    }
+    
+    nav .burger.active span{
+        transform: scale(0);
+    }
+    nav .burger.active::before{
+        transform: rotate(45deg); 
+        top: 9px;
+        background: #000;
+    }
+    nav .burger.active:after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+        background: #000;
+    }
+
+    header{
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    
+}
+
+@media only screen and (max-width:320px) {
+    
+}
