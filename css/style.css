@@ -97,7 +97,7 @@ nav ul a{
     font-weight: 600;
     color: white;
     text-decoration: none;
-    transition: 2s;
+    transition: .8s;
     position: relative;
 }
 
@@ -109,7 +109,7 @@ nav ul li a::after{
     height: 0px;
     margin-top: 40px;
     background: white;
-    transition: 1s;
+    transition: .8s;
     transform-origin: center;
 }
 
