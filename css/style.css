@@ -88,6 +88,11 @@ nav ul{
     z-index: 3;
 }
 
+#cart{
+    display: none;
+}
+
+
 nav ul li{
     margin: 0 20px;
 }
@@ -113,14 +118,14 @@ nav ul li a::after{
     transform-origin: center;
 }
 
-nav ul li a:hover::before{
+.no-touch nav ul li a:hover::before{
     position: absolute;
     content: '';
     width: 50%; margin-left: 50%;
     height: 2px;
 }
 
-nav ul li a:hover::after{
+.no-touch nav ul li a:hover::after{
     position: absolute;
     content: '';
     width: 50%; margin-left: -100%;
@@ -187,7 +192,7 @@ header .header-img img{
     cursor: pointer;
 }
 
-.button-to-top:hover{
+.no-touch .button-to-top:hover{
     background: #9198a3;
 }
 
@@ -222,13 +227,19 @@ header .doc-button:nth-child(1){
     box-shadow: 0px 10px 10px -5px #351F21;
 }
 
-.doc-button:nth-child(1):hover{
+.no-touch header .doc-button:nth-child(1):hover{
     background: white;
     color: #FFC2C7;
     box-shadow: 0px 0px 0px 0px #351F21;
 }
+.no-touch .doc-button:nth-child(1):hover{
+    background: #FFC2C7;
+    color: white;
+    border: 3px solid #FFC2C7;
+    box-shadow: 0px 10px 10px -5px #351F21;
+}
 
-.doc-button:hover{
+.no-touch .doc-button:hover{
     background: #FFC2C7;
     color: white;
     box-shadow: 0px 10px 10px -5px #351F21;
@@ -287,7 +298,7 @@ nav .second-nav-cell .button{
     box-shadow: 0px 5px 15px 2px #351F21;
 }
 
-nav .second-nav-cell .button:hover{
+.no-touch nav .second-nav-cell .button:hover{
     transform: scale(1.05);
 }
 
@@ -368,7 +379,7 @@ nav .second-nav-cell .button:hover{
     background: #7360F2
 }
 
-.socials img:hover{
+.no-touch .socials img:hover{
     transform: scale(1.1) rotate(-40deg);
     box-shadow: 0px 4px 5px 1px rgb(146, 146, 146);
 }
@@ -483,7 +494,7 @@ main .catalog-cell{
     transition: 0.6s;
     margin: 0 20px;
 }
-main .catalog-cell:hover{
+.no-touch main .catalog-cell:hover{
     box-shadow: 0px 4px 10px -3px #351F21;
 }
 
@@ -610,18 +621,18 @@ nav .span-nav-next::after{
     margin-left: 8px;
 }
 
-nav .nav-button-prev:hover .span-nav-prev::before{
+.no-touch nav .nav-button-prev:hover .span-nav-prev::before{
     background: #FFC2C7;
 }
-nav .nav-button-prev:hover .span-nav-prev::after{
+.no-touch nav .nav-button-prev:hover .span-nav-prev::after{
     border-left: 3px solid #FFC2C7;
     border-bottom: 3px solid #FFC2C7;
 }
 
-nav .nav-button-next:hover .span-nav-next::before{
+.no-touch nav .nav-button-next:hover .span-nav-next::before{
     background: #FFC2C7;
 }
-nav .nav-button-next:hover .span-nav-next::after{
+.no-touch nav .nav-button-next:hover .span-nav-next::after{
     border-right: 3px solid #FFC2C7;
     border-top: 3px solid #FFC2C7;
 }
@@ -837,7 +848,7 @@ nav .nav-button-next:hover .span-nav-next::after{
     box-shadow: 0px 10px 10px -5px #351F21;
 }
 
-.dodatu-vidguk input[type="submit"]:hover{
+.no-touch .dodatu-vidguk input[type="submit"]:hover{
     background: #fff;
     color: #FFC2C7;
     box-shadow: 0px 0px 0px 0px #351F21;
@@ -974,7 +985,7 @@ footer{
     font-size: 16px;
     transition: 0.6s;
 }
-.footer-text .column a:hover{
+.no-touch .footer-text .column a:hover{
     transform: scale(1.02);
     color: #FFC2C7;
 }
@@ -1032,7 +1043,7 @@ footer{
     margin-top: 40px;
 }
 
-.footer-socials img:hover{
+.no-touch .footer-socials img:hover{
     transform: scale(1.1);
     box-shadow: 0px 4px 5px 1px rgb(146, 146, 146);
 }

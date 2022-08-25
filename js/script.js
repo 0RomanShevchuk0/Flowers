@@ -2,6 +2,8 @@ document.querySelector('#header-catalog-button').onclick = () => location.href =
 
 document.querySelector('.nav-logo-div').addEventListener('click', () => location.reload());
 
+
+//*Бургер
 document.querySelector('#burger').addEventListener('click',function(event){
     this.classList.toggle('active');
     document.querySelector('#nav-list').classList.toggle('active');
@@ -13,11 +15,13 @@ let navLinks = document.querySelectorAll('#nav-link');
 
 navLinks.forEach((navlink => {
     navlink.addEventListener('click', function(){
-        document.querySelector('#burger').classList.toggle('active');
-        document.querySelector('#nav-list').classList.toggle('active');
-        document.querySelector('body').classList.toggle('locked');
-        document.querySelector('#button-to-top').classList.toggle('locked');
-        document.querySelector('#first-nav').classList.toggle('active');
+        if(window.innerWidth <= 768){
+            document.querySelector('#burger').classList.toggle('active');
+            document.querySelector('#nav-list').classList.toggle('active');
+            document.querySelector('body').classList.toggle('locked');
+            document.querySelector('#button-to-top').classList.toggle('locked');
+            document.querySelector('#first-nav').classList.toggle('active');
+        }
     })
 }));
 
@@ -184,3 +188,10 @@ vidgukiTextarea.addEventListener('keyup', (event) => {
     textareaValue = vidgukiTextarea.value;
     symbolCounter.textContent = `Symbols: ${textareaValue.length}`;
 })
+
+if (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) {
+    console.log('this is a touch device');
+} else {
+    console.log('this is not a touch device');
+    document.querySelector('body').classList.add('no-touch');
+  }
