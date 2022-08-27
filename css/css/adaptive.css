@@ -1,0 +1,1143 @@
+@media only screen and (max-width:1580px) {
+    h1{
+        font-size: 38px;
+    }
+    h3{
+        font-size: 24px;
+    }
+
+    .vidguki-line2 .vidguki-content-inner{
+        margin-right: 130px;
+    }
+}
+
+@media only screen and (max-width:1380px) {
+    header {
+        height: 600px;
+    }
+
+    h1{
+        font-size: 32px;
+    }
+    h3{
+        font-size: 22px;
+    }
+
+    .doc-button{
+        width: 190px;
+        height: 48px;
+    }
+
+    .about-us-inner {
+        margin-top: 30px;
+    }
+
+    .catalog_inner h1{
+        margin-left: 8%;
+    }
+    .vidguki-inner{
+        width: 76%;
+    }
+    .vidguki-content{
+        width: 1050px;
+    }
+
+    .vidguki-line2 .vidguki-content-inner{
+        margin-right: 110px;
+    }
+
+    .socials{
+        margin-left: 110px;
+        margin-top: 300px;
+    }
+
+    #flowers1,#flowers2{
+        width: 250px;
+    }
+    #flowers3{
+        width: 230px;
+        margin-top: 70px;
+        right: -200px;
+        }
+    }
+
+@media only screen and (max-width:1200px) {
+
+    nav .first-nav{
+        height: 80px;
+    }
+    nav .nav-logo{
+        width: 150px;
+    }
+    nav .nav-icons{
+        width: 25px;
+    }
+    nav ul a{
+        font-size: 22px;
+    }
+
+    header {
+        height: 440px;
+        margin-top:100px;
+    }
+    header .header-content-inner{
+        width: 80%;
+    }
+    header .header-buttons-div{
+        justify-content: flex-start;
+        margin-left: -15px; 
+    }
+
+    nav .second-nav{
+        margin-bottom: -20px;
+    }
+    nav .second-nav-inner{
+        width: 95%;
+    }
+
+    .about-us-inner-img{
+        width: 55%;
+    }
+    .about-us{
+        width: 100%;
+        height: 350px;
+        margin-left: 0;
+    }
+    .about-us-inner{
+        margin-top: 0;
+        width: 60%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .about-us-inner-text{
+        width: 90%;
+    }
+
+    .working-for-u{
+        height: 160px;
+    }
+    .working-for-u h2{
+        margin-left: 9%;
+    }
+    .working-for-u-cells{
+        font-size: 14px;
+    }
+    .working-for-u-cell{
+        width: 180px;
+    }
+    .working-for-u-cell img{
+        width: 80px;
+    }
+
+    .catalog_inner h1{
+        margin-left: 2%;
+    }
+
+    .doc-button{
+        width: 210px;
+    }
+
+    .socials{
+        margin-left: 70px;
+        margin-top: 220px;
+    }
+    .socials img{
+        width: 45px;
+        height: 45px;
+    }
+
+    main .catalog-wrapper{
+        margin-top: 20px;
+    }
+    .catalog_inner h1{
+        margin-left: 10%;
+    }
+    main .catalog-slider{
+        width: 950px;
+    }
+    main .catalog-first-line,
+    main .catalog-second-line{
+        height: 430px;
+    }
+    main .catalog-cell-content{
+        font-size: 18px;
+    }
+    main .catalog-cell-content-info{
+        width: 100%;
+        height: 45px;
+    }
+    main .catalog-cell{
+        min-width: 250px;
+        min-height: 300px;
+        width: 280px;
+        height: 425px;
+    }
+    main .catalog-cell img{
+        height: 260px;
+    }
+    main .catalog-cell .doc-button{
+        margin-top: 15px;
+    }
+
+    .vidguki{
+        height: 920px;
+    }
+    .vidguki h1{
+        margin-left: -2%;
+    }
+    .vidguki-line2 .vidguki-content-inner{
+        left: 0;
+    }
+    .vidguki-content{
+        width: 1150px;
+    }
+    .vidguki-content-inner img{
+        width: 160px;
+        height: 160px;
+    }
+    .vidguk-text{
+        font-size: 23px;
+    }
+    .vidguk-info{
+        width: 85%;
+    }
+    .dodatu-vidguk input[type="submit"]{
+        width: 210px;
+    }
+
+    .dostavka-i-oplata{
+        height: 600px;
+    }
+    .dostavka-i-oplata-inner{
+        justify-content: center;
+    }
+    .steps-line{
+        align-items: center;
+        height: 240px;
+    }
+    .step{
+        width: 250px;
+        margin: 20px 20px;
+    }
+    .step .circle{
+        width: 120px;
+        height: 120px;
+    }
+    .step-text{
+        font-size: 16px;
+    }
+
+    #flowers1{
+        width: 200px;
+    }
+    #flowers2{
+        margin-top: -100px;
+        width: 200px;
+    }
+    #flowers3{
+        width: 150px;
+        margin-top: -60px;
+        right: -150px;
+    }
+
+    .footer-inner{
+        height: 250px;
+    }
+    .footer-content{
+        width: 100%;
+    }
+    .footer-text{
+        justify-content: center
+    }
+    .footer-text .column h4{
+        margin: 5px 0;
+    }
+    .footer-logo img{
+        width: 170px;
+    }
+    .footer-text .column{
+        width: 30%;
+        font-size: 14px;
+    }
+    footer p{
+        margin: 10px 0;
+    }
+    .footer-input{
+        justify-content: center;
+    }
+    .footer-input .input input{
+        width: 350px;
+        height: 38px;
+    }
+    .footer-input .input button{
+        height: 38px;
+    }
+    .footer-socials img{
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+    }
+    footer .copyright{
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    nav .nav-list-div{
+        padding: 0 10px;
+    }
+    nav .nav-logo-div{
+        margin-left: 2%;
+    }
+    nav .nav-logo-div img{
+        width: 120px;
+    }
+    nav .nav-icons-div{
+        margin-right: 20px;
+    }
+    nav .nav-icons-div img{
+        width: 20px;
+    }
+    nav ul{
+        padding-left: 0;
+    }
+    nav ul a{
+        font-size: 18px;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+    h2{
+        font-size: 22px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    .doc-button{
+        width: 160px;
+        height: 44px;
+        margin: 10px;
+        padding: 0;
+    }
+
+    header{
+        margin-top: 50px;
+    }
+
+    nav .second-nav{
+        height: 200px;
+    }
+    nav .second-nav-inner{
+        width: 100%;
+        height: 180px;
+        box-sizing: border-box;
+    }
+    nav .second-nav-cell .button{
+        width: 50%;
+        height: 42px;
+        margin-left: -75%;
+    }
+    .about-us{
+        width: 100%;
+        height: 300px;
+        margin-left: 0px;
+        margin-bottom: -20px;
+    }
+    .about-us-inner h1{
+        margin-left: -20px;
+    }
+    .about-us-inner h3{
+        padding: 0;
+    }
+
+    .socials{
+        margin-left: 20px;
+        margin-top: 145px;
+    }
+    .socials img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .catalog_inner h1{
+        margin-left: 4%;
+    }
+
+    main .catalog-wrapper{
+        margin-top: 0px;
+    }
+    main .catalog-slider{
+        width: 750px;
+    }
+    main .catalog-first-line,
+    main .catalog-second-line{
+        height: 350px;
+        justify-content: flex-start;
+    }
+    main .catalog-cell-content{
+        font-size: 15px;
+    }
+    main .catalog-cell-content-info{
+        width: 75%;
+        height: 36px;
+        margin-top: 3px;
+    }
+    main .catalog-cell{
+        min-width: 0px;
+        min-height: 0px;
+        width: 230px;
+        height: 330px;
+        margin: 0 10px;
+    }
+    main .catalog-cell img{
+        height: 200px;
+    }
+    main .catalog-cell .doc-button{
+        margin-top: 8px;
+    }
+    nav .catalog-nav{
+        height: 60px;
+    }
+    nav .nav-span{
+        width: 9px;
+        height: 9px;
+    }
+    nav .span-nav-prev::before, nav .span-nav-next::before{
+        width: 30px;
+    }
+
+    nav .span-nav-prev::before{
+        margin-left: -15px;
+    }
+    nav .span-nav-prev::after{
+        margin-left: -17px;
+    }
+    nav .span-nav-next::after{
+        margin-left: -1px;
+    }
+    
+    .vidguki{
+        height: 800px;
+    }
+    .vidguki-inner{
+        width: 85%;
+    }
+    .vidguki h2{
+        font-size: 22px;
+    }
+    .vidguki-line1, .vidguki-line2{
+        height: 170px;
+    }
+    .vidguki-content{
+        width: 1000px;
+    }
+    .vidguki-content-inner img{
+        width: 130px;
+        height: 130px;
+    }
+    .vidguk-text{
+        font-size: 18px;
+    }
+    .pidpis{
+        font-size: 18px;
+    }
+    .dodatu-vidguk input[type="text"]{
+        height: 36px;
+    }
+    .dodatu-vidguk textarea{
+        height: 100px;
+    }
+    .dodatu-vidguk input[type="submit"]{
+        width: 160px;
+        height: 44px;
+    }
+
+    #flowers1{
+        width: 140px;
+        margin-top: -70px;
+    }
+    #flowers2{
+        width: 140px;
+        margin-top: -100px;
+    }
+    #flowers3{
+        width: 130px;
+        margin-top: -30px;
+        right: -120px;
+    }
+
+    .dostavka-i-oplata{
+        width: 100%;
+        height: 600px;
+        margin: 0 auto;
+    }
+    .dostavka-i-oplata-inner{
+        width: 90%;
+        height: 90%;
+    }
+    .steps-line{
+        align-items: center;
+        height: 240px;
+    }
+    .step{
+        width: 200px;
+        margin: 10px 10px;
+    }
+    .step .circle{
+        width: 130px;
+        height: 130px;
+    }
+    .step-text{
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .footer-inner{
+        height: 240px;
+    }
+    .footer-logo img{
+        width: 150px;
+    }
+    .footer-text{
+        height: 160px;
+    }
+    .footer-text .column h4{
+        font-size: 20px;
+        margin: 5px 0;
+    }
+    .footer-text .column{
+        width: 30%;
+        height: 90%;
+        font-size: 14px;
+    }
+    footer p{
+        margin-bottom: 0;
+    }
+    .footer-input .input input{
+        width: 300px;
+        height: 36px;
+    }
+    .footer-input .input button{
+        width: 120px;
+        margin-left: -120px;
+        height: 36px;
+    }
+    .footer-socials img{
+        width: 40px;
+        height: 40px;
+        margin: 10px 15px;
+    }
+    footer .copyright{
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .footer-text .column a:hover{
+        color: #fff;
+    }
+
+    .button-to-top{
+        width: 45px;
+        height: 45px;
+        right: 30px;
+        bottom: 30px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    body.locked{
+        overflow: hidden;
+    }
+    .button-to-top.active.locked{
+        display: none;
+    }
+
+    #cart{
+        display: block;
+        position: absolute;
+        margin-left: -15%;
+		border: none;
+    }
+    #cart::before,
+    #cart::after{
+        height: 0;
+    }
+
+    #cart img{
+        width: 50px;
+    }
+
+    nav .first-nav{
+        justify-content: space-between;
+        height: 60px;
+        z-index: 5;
+        transition: 0.6s;
+    }
+    nav .first-nav.active{
+        background: #FFC2C7;
+    }
+    nav .nav-icons-div{
+        display: none;
+    }
+    nav .nav-list-div{
+        transform: translateY(-100vh);
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background: #FFC2C7;
+        transition: 1s;
+    }
+    nav .nav-list-div.active{
+        transition: transform 0.6s;
+        transform: translateY(50px);
+    }
+    nav .nav-list-div ul{
+        width: 100%;
+        height: 0px;
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        transition: 1s;
+    }
+    nav .nav-list-div.active ul{
+        height: 100vh;
+    }
+    nav ul a{
+        margin-left: -10%;
+        width: 120%;
+        display: block;
+        padding: 10px 0;
+        font-size: 24px;
+        transition: 0.6s;
+		border-bottom: 2px solid black;
+    }
+    nav ul li a:hover::before{
+        position: absolute;
+        content: '';
+        width: 0; margin-left: 0;
+        height: 0;
+    }
+    
+    nav ul li a:hover::after{
+        position: absolute;
+        content: '';
+        width: 0; margin-left: 0;
+        height: 0;
+    }
+
+    nav .nav-logo-div{
+        margin-left: 8%;
+    }
+    nav .nav-logo-div img{
+        width: 130px;
+    }
+
+    nav .burger{
+        display: block;
+        margin-right: 5%;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        background: transparent;
+        cursor: pointer;
+        z-index: 10;
+    }
+    nav .burger span{
+        position: absolute;
+        right: 0px;
+        width: 100%;
+        height: 2px;
+        bottom: calc(50% - 1px);
+        background: #FFC2C7;
+        box-shadow: 0 0 1.5px rgb(57, 49, 49);
+        transition: 0.6s;
+    }
+    nav .burger::before,
+    nav .burger::after{
+        content: '';
+        right: 0;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: #FFC2C7;
+        box-shadow: 0 0 1.5px rgb(57, 49, 49);
+        transition: 0.6s;
+    }
+    nav .burger::before{
+        top: 1px;
+    }
+    nav .burger::after{
+        bottom: 1px;
+    }
+    
+    nav .burger.active span{
+        transform: scale(0);
+    }
+    nav .burger.active::before{
+        transform: rotate(45deg); 
+        top: 9px;
+        background: #000;
+    }
+    nav .burger.active:after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+        background: #000;
+    }
+
+    header{
+        margin-top: 10px;
+    }
+
+    nav .second-nav{
+        height: 100%;
+        margin-bottom: 20px;
+    }
+    nav .second-nav-inner{
+        flex-direction: column;
+        height: 100%; 
+    }
+    nav .second-nav-cell{
+        width: 90%;
+        height: 100%;
+        flex: 0 0 auto;
+        margin-top: 5px;
+    }
+
+    header{
+        height: 350px;
+    }
+    header .header-content{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        padding: 0 20px;
+    }
+    header .header-content-inner{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    header .header-content-inner h3{
+        text-align: center; 
+    }
+    header .header-buttons-div{
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    header .header-img{
+        display: none;
+    }
+
+    .about-us{
+        height: 100%;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 0;
+    }
+    .about-us-inner{
+        align-self: center;
+        width: 80%;
+    }
+    .about-us-inner-text{
+        width: 100%;
+    }
+    .socials{
+        transform: rotate(0) translate(0);
+        left: -80%;
+        top: -30%;
+    }
+    .socials img{
+        width: 50px;
+        height: 50px;
+        transform: rotate(0);
+    }
+
+    .working-for-u{
+        height: 100%;
+    }
+    .working-for-u h2{
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    .working-for-u-cells{
+        height: 100%;
+        display: grid;
+        grid-template-columns: 45% 45%;
+    }
+
+
+    .catalog_inner h1{
+        margin-left: 4%;
+    }
+
+    main .catalog-wrapper{
+        margin-top: 0px;
+    }
+    main .catalog-slider{
+        width: 460px;
+        margin: 0 auto;
+    }
+    main .catalog-first-line,
+    main .catalog-second-line{
+        height: 260px;
+        justify-content: flex-start;
+    }
+    main .catalog-cell-content{
+        font-size: 15px;
+    }
+    main .catalog-cell-content-info{
+        width: 75%;
+        height: 36px;
+        margin-top: 3px;
+    }
+    main .catalog-cell{
+        min-width: 0px;
+        min-height: 0px;
+        width: 135px;
+        height: 260px;
+        margin: 0 10px;
+    }
+    main .catalog-cell img{
+        height: 200px;
+    }
+    main .catalog-cell .doc-button{
+        margin-top: 8px;
+        width: 100px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .vidguki{
+        height: 750px;
+    }
+    .vidguki-inner{
+        width: 95%;
+        height: 100%;
+    }
+    .vidguki-slider{
+        width: 500px;
+    }
+    .vidguki h2{
+        font-size: 22px;
+    }
+    .vidguki-line1, .vidguki-line2{
+        height: 150px;
+    }
+    .vidguki-content{
+        width: 650px;
+    }
+    .vidguki-content-inner{
+        height: 100%;
+    }
+    .vidguki-content-inner img{
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+        align-self: center;
+    }
+    .vidguk-text{
+        width: 100%;
+        height: 100%;
+        font-size: 14px;
+    }
+    .vidguk-info{
+        height: 100%;
+    }
+    .pidpis{
+        font-size: 14px;
+    }
+    .dodatu-vidguk input[type="text"]{
+        height: 36px;
+    }
+    .dodatu-vidguk textarea{
+        height: 100px;
+    }
+    .dodatu-vidguk input[type="submit"]{
+        display: block;
+        width: 50%;
+        height: 44px;
+        margin: 0 auto;
+    }
+    #flowers1{
+        width: 120px;
+        margin-top: -50px;
+    }
+    #flowers2{
+        display: none;
+    }
+    #flowers3{
+        width:  90px;
+        margin-top: -35px;
+        right: -80px;
+    }
+
+    .dostavka-i-oplata{
+        width: 100%;
+        height: 540px;
+        margin: 0 auto;
+    }
+    .dostavka-i-oplata-inner{
+        width: 90%;
+        height: 90%;
+    }
+    .steps-line{
+        align-items: center;
+        height: 200px;
+    }
+    .step{
+        width: 140px;
+        margin: 10px 10px;
+    }
+    .step .circle{
+        width: 100px;
+        height: 100px;
+    }
+    .step-text{
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .footer-inner{
+        height: 450px;
+    }
+    .footer-logo img{
+        width: 150px;
+    }
+    .footer-content{
+        flex-direction: column-reverse;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .footer-text{
+        width: 100%;
+        height: 40%;
+    }
+    .footer-text .column h4{
+        font-size: 20px;
+        margin: 5px 0;
+    }
+    .footer-text .column{
+        width: 30%;
+        height: 10%;
+        font-size: 14px;
+    }
+    footer p{
+        margin-bottom: 0;
+    }
+    .footer-input{
+        display: flex;
+        align-items: center;
+        width: 95%;
+        height: 50%;
+    }
+    .input{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+    .footer-input .input input{
+        width: 100%;
+        height: 36px;
+        margin: 0;
+    }
+    .footer-input .input button{
+        position: static;
+        width: 50%;
+        height: 36px;
+        margin: 20px 0;
+    }
+    .footer-socials img{
+        width: 40px;
+        height: 40px;
+        margin: 10px 15px;
+    }
+    footer .copyright{
+        height: 30px;
+        font-size: 16px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer-text .column a:hover{
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    
+	nav .first-nav{
+		height: 50px;
+	}
+	nav .nav-logo-div img{
+		width: 100px;
+	}
+	nav .nav-list-div.active ul{
+        height: 103vh;
+    }
+	nav .nav-list-div.active{
+        transform: translateY(45px);
+    }
+	nav .burger{
+	margin-right: 9%;
+	}
+
+	h1{
+		font-size: 23px;
+	}
+	header .header-content-inner h3{
+		font-size: 18px;
+		padding: 0px;
+	}
+
+	.doc-button{
+		width: 120px;
+	}
+
+	.socials{
+		left: -70%;
+		top: -70%;
+	}
+	.socials img{
+		width: 30px;
+		height: 30px;
+	}
+	.socials a{
+		width: 50px;
+		height: 50px;
+	}
+
+	main .catalog-slider{
+        width: 315px;
+        margin: 0 auto;
+    }
+    main .catalog-first-line,
+    main .catalog-second-line{
+        height: 200px;
+        justify-content: flex-start;
+    }
+    main .catalog-cell-content{
+        font-size: 15px;
+    }
+    main .catalog-cell-content-info{
+        width: 75%;
+		font-size: 14px;
+        height: 36px;
+        margin-top: 3px;
+    }
+	main .catalog-cell-content-price{
+		font-size: 12px;
+	}
+    main .catalog-cell{
+        width: 85px;
+        height: 200px;
+        margin: 0 10px;
+    }
+    main .catalog-cell img{
+        height: 100px;
+    }
+    main .catalog-cell .doc-button{
+        margin-top: 8px;
+        width: 70px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .vidguki{
+        height: 750px;
+    }
+    .vidguki-inner{
+        width: 95%;
+        height: 100%;
+    }
+    .vidguki-slider{
+        width: 300px;
+    }
+    .vidguki h2{
+        font-size: 22px;
+    }
+    .vidguki-line1, .vidguki-line2{
+        height: 150px;
+    }
+    .vidguki-content{
+        width: 450px;
+    }
+    .vidguki-content-inner{
+        height: 100%;
+    }
+    .vidguki-content-inner img{
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+        align-self: center;
+    }
+    .vidguk-text{
+        width: 100%;
+        height: 100%;
+        font-size: 14px;
+    }
+    .vidguk-info{
+        height: auto;
+		display: -webkit-box;
+		-webkit-line-clamp: 4;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+    .pidpis{
+		margin-top: 10px;
+		padding-top: 0px;
+        font-size: 14px;
+    }
+
+	.dostavka-i-oplata{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .dostavka-i-oplata-inner{
+        width: 90%;
+        height: 90%;
+    }
+    .steps-line{
+		flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .step{
+		height: auto;
+        width: 100%;
+        margin: 10px 10px;
+		box-shadow: 0 5px 5px 2px #FFC2C7;
+    }
+    .step .circle{
+        width: 70px;
+        height: 70px;
+		font-size: 40px;
+    }
+    .step-text{
+        height: 40px;
+		width: 80%;
+        font-size: 15px;
+		height: auto;
+    }
+
+	.footer-text .column h4 {
+		font-size: 17px;
+	}
+
+	#flowers1{
+        width: 80px;
+        margin-top: -50px;
+    }
+    #flowers3{
+        width:  80px;
+        margin-top: 550px;
+        right: -80px;
+    }
+}
