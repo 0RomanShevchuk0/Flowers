@@ -1056,6 +1056,9 @@
         width: 95%;
         height: 100%;
     }
+	.vidguki h1 {
+		margin-left: 4%;
+	}
     .vidguki-slider{
         width: 300px;
     }
